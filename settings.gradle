@@ -1,3 +1,10 @@
-include 'library'
-include 'extras/PullToRefreshListFragment'
-include 'extras/PullToRefreshViewPager'
+include ':sample'
+include ':library'
+//include ':extras/PullToRefreshListFragment'
+//include ':extras/PullToRefreshViewPager'
+include ':PullToRefreshListFragment'
+include ':PullToRefreshViewPager'
+
+
+project(':PullToRefreshListFragment').projectDir = new File('extras/PullToRefreshListFragment')
+project(':PullToRefreshViewPager').projectDir = new File('extras/PullToRefreshViewPager')

@@ -1,16 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ptr="http://schemas.android.com/apk/res-auto"
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
+
     <com.handmark.pulltorefresh.library.PullToRefreshListView
-        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+
         android:id="@+id/ptrListView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         ptr:ptrSmoothScrollDuration="400"
         ptr:ptrShowIndicator="false"
         ptr:ptrAnimationStyle="my_custom"
-        ptr:ptrOverScroll="true"
-        />
+        ptr:ptrOverScroll="true" />
+
 </LinearLayout>

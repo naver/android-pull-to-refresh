@@ -1,11 +1,9 @@
-apply plugin: 'android-library'
+apply plugin: 'com.android.library'
 
 dependencies {
 	compile project(':library')
-	compile 'com.android.support:support-v4:18.0.+'
+	compile 'com.android.support:support-v4:21.0.3'
 }
-
-archivesBaseName = 'extra-listfragment'
 
 android {
     compileSdkVersion Integer.parseInt(ANDROID_COMPILE_SDK_VERSION)
@@ -19,4 +17,3 @@ android {
     	}
     }
 }
-

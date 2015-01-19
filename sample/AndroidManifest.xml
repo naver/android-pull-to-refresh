@@ -4,9 +4,10 @@
     android:versionCode="2110"
     android:versionName="2.1.1" >
 
+    <!--android:targetSdkVersion="15"-->
     <uses-sdk
-        android:minSdkVersion="4"
-        android:targetSdkVersion="15" />
+        android:minSdkVersion="14"
+         />
 
     <application
         android:hardwareAccelerated="true"
@@ -61,9 +62,16 @@
             android:name=".PullToRefreshWebView2Activity"
             android:label="PtR WebView Advanced" >
         </activity>
+
         <activity
             android:name=".PullToRefreshCustomLoadingLayoutActivity"
-            android:label="PtR Custom LoadingLayout"></activity>
+            android:label="PtR Custom LoadingLayout">
+        </activity>
+
+        <activity
+            android:name=".PullToRefreshRecyclerViewActivity"
+            android:label="PtR RecyclerView">
+        </activity>
     </application>
 
     <!-- For WebView Sample -->

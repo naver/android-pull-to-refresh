@@ -2,6 +2,11 @@
 bin
 gen
 library/build/
+/build
+
+**/build
+/.gradle
+/downloads
 
 #Eclipse
 .project
@@ -9,6 +14,7 @@ library/build/
 .settings
 
 #IntelliJ IDEA
+/.idea
 .idea
 *.iml
 *.ipr

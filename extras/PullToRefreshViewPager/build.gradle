@@ -1,31 +1,19 @@
-apply plugin: 'android-library'
-
-buildscript {
-    repositories {
-        mavenCentral()
-    }
-
-    dependencies {
-        classpath 'com.android.tools.build:gradle:0.6.+'
-    }
-}
-
-archivesBaseName = 'extra-viewpager'
+apply plugin: 'com.android.library'
 
 dependencies {
-	compile project(':library')
-	compile 'com.android.support:support-v4:18.0.+'
+    compile project(':library')
+    compile 'com.android.support:support-v4:21.0.3'
 }
 
 android {
     compileSdkVersion Integer.parseInt(ANDROID_COMPILE_SDK_VERSION)
     buildToolsVersion ANDROID_BUILD_TOOLS_VERSION
-
+    
     sourceSets {
-    	main {
-    		manifest.srcFile 'AndroidManifest.xml'
-    		java.srcDirs=['src']
-    		res.srcDirs=['res']
-    	}
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs=['src']
+            res.srcDirs=['res']
+        }
     }
 }
