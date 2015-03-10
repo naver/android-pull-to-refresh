@@ -1,10 +1,10 @@
 buildscript {
     repositories {
-        mavenCentral()
+        jcenter()
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:0.11.+'
+        classpath 'com.android.tools.build:gradle:1.1.0'
     }
 }
 
@@ -13,6 +13,6 @@ allprojects {
 	group = PULLTOREFRESH_RELEASE_GROUP
 
     repositories {
-        mavenCentral()
+        jcenter()
     }
 }
